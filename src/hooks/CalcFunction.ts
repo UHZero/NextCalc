@@ -3,11 +3,10 @@ import { useCallback, useState } from "react";
 
 export default function useCalcFunctions() {
     const [expression, setExpression] = useState("");
-    
+
 
     const handlerClick = (event: any) => {
-        console.log(+event.target.value)
-        setExpression(expression + event.target.value)
+        console.log(event)
     }
 
     const handleClear = () => {

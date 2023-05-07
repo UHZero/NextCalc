@@ -19,7 +19,7 @@ export default function Button (props: LabelProps) {
 
             border-r border-b border-lime-950
             
-        `} onClick={props.onClick}>
+        `} onClick={props.onClick(props.value)}>
             { props.value }
         </div>
     )
