@@ -15,6 +15,8 @@ export default function Button (props: LabelProps) {
             
             bg-zinc-600 h-20
 
+            rounded-lg
+
             justify-center text-center text-lg
 
             border-r border-b border-lime-950
