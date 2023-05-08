@@ -4,12 +4,12 @@ import useCalcFunctions from '@/hooks/CalcFunction'
 
 export default function Calculator() {
     
-    const {handleClear, handleEvaluate, handlerClick, expression} = useCalcFunctions()
+    const {handleClear, handleEvaluate, handlerClick, expression, valor} = useCalcFunctions()
 
     return (
         <div className='flex flex-col justify-center items-center h-screen'>
             <div className='grid h-20 w-80'>
-                <Display  value={ expression }/>
+                <Display  value={ valor }/>
             </div>
             <div className='grid grid-cols-4'>
                 <Button onClick={handleClear} value={"AC"} triple />

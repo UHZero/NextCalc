@@ -3,10 +3,11 @@ import { useCallback, useState } from "react";
 
 export default function useCalcFunctions() {
     const [expression, setExpression] = useState("");
+    const [valor, setValor] = useState("")
 
 
     const handlerClick = (event: any) => {
-        console.log(event)
+        setValor(event)
     }
 
     const handleClear = () => {
@@ -23,6 +24,7 @@ export default function useCalcFunctions() {
     }, [])
 
     return {
+        valor,
         expression,
         handleClear,
         handleEvaluate,
